@@ -25,7 +25,7 @@
 
 
 
-            <table class="table">
+            <table class="table table-hover table-striped-columns">
 
                 <tr>
                     {{-- <th>Nomor Id</th> --}}
