@@ -9,6 +9,8 @@ class OrtuController extends Controller
     //
     public function index()
     {
-        return "ini lokasi orang tua siswa";
+        $data_orangtua = \App\Models\orangtua::all();
+        // return 'Ini Lokasi List Siswa';
+        return view('ortu.index', ['data_ortu' => $data_orangtua]);
     }
 }

@@ -1,6 +1,7 @@
 <h1>Ini File Index Siswa</h1>
 {{-- {{ dd($data_siswa) }} --}}
 
+
 <!doctype html>
 <html lang="en">
 
@@ -22,10 +23,37 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-6">
+                <h1>Data Pelajar SMK TELKOM</h1>
 
+            </div>
+            </button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary floar-right" data-toggle="modal"
+                data-target="#exampleModalLabel">
+                Tambah Data Siswa
+            </button>
 
-
-            <table class="table table-hover table-striped-columns">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered border-primary">
 
                 <tr>
                     {{-- <th>Nomor Id</th> --}}
@@ -37,9 +65,10 @@
                     <th>Tanggal Lahir Siswa </th>
                     <th>Jenis Kelamin</th>
                     <th>No Telpom</th>
-                    <th>Alamat</th>
+                    {{-- <th>Alamat</th> --}}
 
                 </tr>
+
                 @foreach ($data_siswa as $siswa)
                     <tr>
                         {{-- <td>{{ $siswa->id }}</td> --}}
@@ -51,7 +80,7 @@
                         <td>{{ $siswa->tanggal_lahir }}</td>
                         <td>{{ $siswa->jenis_kelamin }}</td>
                         <td>{{ $siswa->no_telp }}</td>
-                        <td>{{ $siswa->alamat }}</td>
+                        {{-- <td>{{ $siswa->alamat }}</td> --}}
                     </tr>
                 @endforeach
 
@@ -66,4 +95,4 @@
     </div>
 </body>
 
-</html>
+</html> --}} --}}
